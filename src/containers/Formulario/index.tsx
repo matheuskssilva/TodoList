@@ -26,9 +26,14 @@ export const Formulario = () => {
       prioridade,
       enums.Status.PENDENTE,
       descricao,
-      9
+      1
     )
-    dispatch(cadastrarTaf(tarefaParaAdicionar))
+    dispatch(cadastrarTaf({
+      titulo,
+      descricao,
+      prioridade,
+      status: enums.Status.PENDENTE,
+    }))
     navigate('/')
   }
 

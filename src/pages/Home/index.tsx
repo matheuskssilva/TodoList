@@ -6,7 +6,7 @@ import ListaDeTarefas from "../../containers/ListaDeTarefas"
 export const Home = () => {
   return (
     <>
-        <BarraLateral />
+        <BarraLateral mostrarFiltros={true} />
         <ListaDeTarefas />
         <BotaoAdicionar />    
     </>
